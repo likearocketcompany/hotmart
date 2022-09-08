@@ -3,7 +3,6 @@
 namespace LikeARocket\Hotmart\HttpClient;
 
 use Exception;
-use LikeARocket\Hotmart\HttpClient\Response;
 
 class HttpClient
 {
@@ -70,6 +69,11 @@ class HttpClient
         return $url;
     }
 
+    protected function setMethod(string $method): void
+    {
+        $this->method = $method;
+    }
+
     protected function setHeaders(): void
     {
         $this->headers = [
@@ -77,11 +81,6 @@ class HttpClient
             'Accept: application/json',
             'Authorization: ' . $this->accessToken,
         ];
-    }
-
-    protected function setMethod(string $method): void
-    {
-        $this->method = $method;
     }
 
     protected function setParameters(array $parameters): void

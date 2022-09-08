@@ -4,7 +4,6 @@ namespace LikeARocket\Hotmart\HttpClient;
 
 class Response
 {
-    
     private int $code;
     private array $headers;
     private string $body;

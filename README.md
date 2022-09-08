@@ -44,10 +44,10 @@ $hotmart->patch($endpoint, $parameters = [], $body = []);
 
 #### Arguments
 
-| Params       | Type     | Description                                                    |
-| ------------ | -------- | -------------------------------------------------------------- |
-| `endpoint`   | `string` | Hotmart API endpoint, example: `/payments/api/v1/subscriptions`|
-| `parameters` | `array`  | Each array index has a query param, example: `status=ACTIVE`   |
+| Params       | Type     | Description                                                       |
+| ------------ | -------- | ----------------------------------------------------------------- |
+| `endpoint`   | `string` | Hotmart API endpoint, example: `/payments/api/v1/subscriptions`   |
+| `parameters` | `array`  | Each array index has a query param, example: `status => 'ACTIVE'` |
 
 
 #### Response
